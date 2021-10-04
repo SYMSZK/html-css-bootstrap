@@ -12,7 +12,7 @@
       <input type="hidden" name="id" value="123456789" />
       <p>
         <label for="ad">Adınız</label>
-        <input id="id" type="text" />
+        <input id="id" type="text" required minlength="2" />
       </p>
 
       <p>
@@ -28,6 +28,66 @@
         <label for="deneyim">Deneyim</label>
         <input min="0" max="10" type="number" id="deneyim" />
       </p>
+      <p>
+        <label for="hobiler">Hobileriniz</label><br />
+
+        <input type="checkbox" name="futbol" id="futbol" value="futbol" />
+        <label for="futbol">Futbol</label><br />
+
+        <input
+          type="checkbox"
+          name="basketbol"
+          id="basketbol"
+          value="basketbol"
+          checked
+        />
+        <label for="basketbol">Basketbol</label><br />
+
+        <input type="checkbox" name="voleybol" id="voleybol" value="voleybol" />
+        <label for="voleybol">Voleybol</label><br />
+      </p>
+      <p>
+        <label for="cinsiyet">Cinsiyet</label><br />
+
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
+        <label for="erkek"> Erkek</label><br />
+
+        <input type="radio" name="cinsiyet" id="kadin" value="bayan" />
+        <label for="kadin"> Erkek</label><br />
+      </p>
+
+      <p>
+        <label for="medeni">Medeni Hali</label><br />
+
+        <input type="radio" name="medeni hali" id="evli" value="evli" />
+        <label for="evli"> Evli</label><br />
+
+        <input type="radio" name="medeni hali" id="bekar" value="bekar" />
+        <label for="bekar"> Bekar</label><br />
+      </p>
+
+      <p>
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar" />
+      </p>
+      <p>
+        <label for="dogum">Doğum Tarihi</label>
+        <input type="date" name="dogum" id="dogum" />
+      </p>
+      <p>
+        <label for="dogum_yeri">Doğum Yeri</label>
+        <select name="dogum" id="dogum_yeri">
+          <option value="1">Adana</option>
+          <option value="2">Manisa</option>
+          <option value="3">İzmir</option>
+          <option value="4">Denizli</option>
+        </select>
+      </p>
+      <p>
+        <label for="adres">Adres</label><br />
+        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+      </p>
+
       <p>
         <input type="submit" value="Gönder" />
         <input type="button" value="Kontrol Et" />
